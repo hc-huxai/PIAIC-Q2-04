@@ -58,11 +58,11 @@ export default function Home() {
     <div className="w-screen h-screen">
       <header className="fixed top-0 w-screen rounded-3xl h-16 p-4 flex items-center justify-between">
         <Image src={logo} alt="logo" className="h-8 w-auto" />
-        <Button size="icon" asChild>
+{/*         <Button size="icon" asChild>
           <Link href={'https://github.com/hc-huxai'} target="_blank">
             <Github/>
           </Link>
-        </Button>
+        </Button> */}
       </header>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="overflow-hidden h-16 flex items-center relative">
