@@ -57,7 +57,7 @@ export default function Home() {
   return (
     <div className="w-screen h-screen">
       <header className="fixed top-0 w-screen rounded-3xl h-16 p-4 flex items-center justify-between">
-        <Image src={logo} alt="logo" className="h-8 w-auto" />
+        <Image src={logo} alt="logo" className="h-8 w-auto select-none" />
 {/*         <Button size="icon" asChild>
           <Link href={'https://github.com/hc-huxai'} target="_blank">
             <Github/>
