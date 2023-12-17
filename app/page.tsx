@@ -65,18 +65,16 @@ export default function Home() {
         </Button> */}
       </header>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className="overflow-hidden h-16 flex items-center relative">
+        <div className="w-64 h-16 overflow-hidden relative">
           <motion.div
             initial={{ scale: 0 }}
-            animate={{ translateY: `-${nameIndex * 4 + 0.25}rem`, scale: 1 }}
-            transition={{ ease: "easeInOut", type: "spring", stiffness: "80" }}
-            className="w-64 h-16 flex flex-col gap-1"
+            animate={{ scale: 1, translateY: `-${nameIndex * 4}rem` }}
+            transition={{ ease: "easeInOut", type: "spring", stiffness: 80 }}
+            className="w-64 h-16"
           >
             {names.map((name, index) => (
-              <div key={index} className="w-64 h-16">
-                <span className="text-6xl block font-bold text-center w-64 h-16 select-none">
-                  {name}
-                </span>
+              <div key={index} className="w-64 h-16 text-6xl font-bold text-center select-none">
+                {name}
               </div>
             ))}
           </motion.div>
